@@ -124,4 +124,3 @@ def tp(filename):
         image.putpixel(i,(255 - r,255-g,255-b))
     image.save('tp2.jpg')
 
-print(similarityFN('lisa.jpg', 'lisa2.jpg', 100))
