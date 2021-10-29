@@ -40,7 +40,7 @@ def similarityFN(filename,filename2,fluctuation):
 
     x,y = im.size
     x2,y2 = im2.size
-    print(x, y)
+    
 
     im2c = imageCopy(im2)
     im2c = im2c.resize((x,y))
