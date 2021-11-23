@@ -107,20 +107,3 @@ def noise(image,noiseAm):
         im.putpixel(i,(r,g,b))
 
     return im
-
-
-
-def tp(filename):
-    image = PIL.Image.open(filename)
-    x, y = image.size
-    arr = AllComb(x, y)
-
-    for i in arr:
-        x2,y2 = i
-
-        
-
-        [r, g, b] = rgbValue(image.getpixel(i))
-        image.putpixel(i,(255 - r,255-g,255-b))
-    image.save('tp2.jpg')
-
